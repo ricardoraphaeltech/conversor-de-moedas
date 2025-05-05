@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(to bottom, rebeccapurple, #4682b4, turquoise);
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteudo {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    width: 700px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.conteudo h1 {
+    font-size: 42px;
+    width: 550px;
+    margin: 0 auto 25px;
+    background-image: linear-gradient(to bottom, #ccff33, #00e600);
+    color: #000000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteudo label {
+    background-image: linear-gradient(to bottom, #ffffff, #cecece);
+    color: #000000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.conteudo input {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+}
+
+.conteudo #valor {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.conteudo button {
+    margin-top: 15px;
+    width: 170px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 25px;
+    background: #33cc33;
+    color: #000000;
+}
+
+.conteudo button:hover {
+    background: linear-gradient(to top, #00e600, #ccff33);
+}
+
+#resultado {
+    width: 320px;
+    height: 38px;
+    background: #cccccc;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#taxa-info {
+    margin-bottom: 55px;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 12px;
+}
+
+footer .social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 35%;
+}
+
+footer .social-media .instagram {
+    background: linear-gradient(to top right, #fff45c, #bd2c85, #7153f7);
+}
+
+footer .social-media .facebook {
+    background: linear-gradient(to top right, #0d44f8, #4d99fc);
+}
+
+footer .social-media .github {
+    background: linear-gradient(to top right, #482179, #ae3dbb);
+}
+
+footer .social-media .linkedin {
+    background: linear-gradient(to top right, #0b5197, #327fcf);
+}
+
+footer .social-media i {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+@media(max-width: 768px) {
+    .conteudo {
+        width: 85vw;
+    }
+
+    .conteudo h1 {
+        width: 65vw;
+    }
+}
+
+@media(max-width: 480px) {
+    .conteudo input {
+        width: 65vw;
+    }
+
+    .conteudo #resultado {
+        width: 65vw;
+    }
+}
+
+@media(max-width: 1024px) and (orientation: landscape) {
+    body {
+        height: 100vh;
+    }
+
+    body .conteudo {
+        height: 85vh;
+        width: 580px;
+        padding: 12px;
+    }
+
+    .conteudo header img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo h1 {
+        font-size: 34px;
+        width: 535px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo button {
+        margin: 15px 0 15px;
+    }
+
+    .conteudo #taxa-info {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        gap: 10px;
+    }
+
+    footer .social-media a {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer .social-media i {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 392px) {
+    header img {
+        width: 75px;
+        margin-bottom: 16px;
+    }
+
+    .conteudo h1 {
+        font-size: 38px;
+        margin: 0 auto 20px;
+    }
+
+    .conteudo label {
+        font-size: 1.3rem;
+    }
+
+    .conteudo #taxa-info {
+        margin-bottom: 35px;
+    }
+}
+
+@media(max-width: 852px) and (orientation: landscape) {
+    body .conteudo {
+        height: 90vh;
+        width: 550px;
+    }
+
+    .conteudo header img {
+        width: 43px;
+        margin-bottom: 8px;
+    }
+
+    .conteudo h1 {
+        font-size: 30px;
+        margin-bottom: 8px;
+        width: 480px;
+    }
+
+    .conteudo label {
+        font-size: 1.2rem;
+    }
+
+    .conteudo input {
+        width: 310px;
+        height: 28px;
+    }
+
+    .conteudo button {
+        height: 28px;
+        margin: 10px 0 10px;
+    }
+
+    .conteudo #resultado {
+        height: 32px;
+        width: 310px;
+        margin-bottom: 8px;
+    }
+
+    .conteudo #taxa-info {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        gap: 8px;
+    }
+
+    footer .social-media a {
+        width: 23px;
+        height: 23px;
+    }
+
+    footer .social-media i {
+        font-size: 1.1rem;
+    }
+}
